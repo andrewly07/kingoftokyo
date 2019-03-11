@@ -13,8 +13,13 @@ class KingOfTokyoGame{
 			monsterContainer: $(areaData.monsterArea)
 		}
 		this.allMonsters = [];
+		this.handleDiceRoll = this.handleDiceRoll.bind( this );
+		this.diceController = new DiceContainer( this.handleDiceRoll, this.areas.diceDomAreas.diceArea );
 		this.createAllMonsters( monsterData );
 
+	}
+	handleDiceRoll( diceResult ){
+		console.log(diceResult);
 	}
 	createAllMonsters( monsterData ){
 		for( var monsterIndex = 0; monsterIndex < monsterData.length; monsterIndex++){
@@ -28,4 +33,5 @@ class KingOfTokyoGame{
 		var monsterDom = monster.render();
 		this.areas.monsterContainer.append( monsterDom );
 	}
+
 }
