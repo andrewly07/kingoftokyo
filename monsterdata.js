@@ -1,9 +1,5 @@
 
-class Monster{
-	
-}
 
-/*
 var monsterData = [
 	{
 		'name': 'Space Penguin',
@@ -19,5 +15,4 @@ var monsterData = [
 			small: 'images/gigazaursmall.jpg'
 		}
 	}
-];*/
-
+];
