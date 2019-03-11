@@ -5,6 +5,9 @@ body{
 	width: 100vw;
 	display: flex;
 }
+#templates{
+	display: none;
+}
 .commonGameArea{
 	background-color: pink;
 	width: 66.66%;

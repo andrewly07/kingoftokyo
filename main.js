@@ -9,7 +9,7 @@ function initializeGame(){
 			'main': '.diceContainer',
 			'diceArea': '.diceHolder'
 
-		}
+		},
 		'monsterArea': '.monsterContainer',
 
 	}
