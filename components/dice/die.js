@@ -1,6 +1,7 @@
 
 class Die{
-	constructor(){
+	constructor( clickCallback ){
+		this.clickCallback = clickCallback;
 		this.dieFaces = [1,2,3,'heart','energy','punch'];
 		this.currentFace = -1;
 		this.domElement = null;
@@ -22,7 +23,23 @@ class Die{
 		});
 		return this.domElement;
 	}
+	roll(){
+		this.currentFace = Math.floor( Math.random() * this.dieFaces.length);
+		this.domElement.text( this.getCurrentDieFace() );
+	}
 	handleClick(){
-		console.log('die was clicked');
+		this.clickCallback( this );
+	}
+	select(){
+		this.domElement.addClass('highlight')
+	}
+	unselect(){
+		this.domElement.removeClass('highlight')
 	}
 }
+
+
+
+
+
+

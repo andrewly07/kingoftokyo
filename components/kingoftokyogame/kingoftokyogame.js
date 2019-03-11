@@ -9,12 +9,13 @@ class KingOfTokyoGame{
 			diceDomAreas: {
 				main: $(areaData.diceDomElements.main),
 				diceArea: $(areaData.diceDomElements.diceArea),
+				rollButton: $(areaData.diceDomElements.rollButton)
 			},
 			monsterContainer: $(areaData.monsterArea)
 		}
 		this.allMonsters = [];
 		this.handleDiceRoll = this.handleDiceRoll.bind( this );
-		this.diceController = new DiceContainer( this.handleDiceRoll, this.areas.diceDomAreas.diceArea );
+		this.diceController = new DiceContainer( this.handleDiceRoll, this.areas.diceDomAreas );
 		this.createAllMonsters( monsterData );
 
 	}

@@ -7,8 +7,8 @@ function initializeGame(){
 		'tokyoBayLocation': '#tokyoBay',
 		'diceDomElements': {
 			'main': '.diceContainer',
-			'diceArea': '.diceHolder'
-
+			'diceArea': '.diceHolder',
+			'rollButton': '#diceRerollButton'
 		},
 		'monsterArea': '.monsterContainer',
 
